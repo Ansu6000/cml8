@@ -5,7 +5,7 @@
 #include "./rn.cpp"
 
 
-#define NUM_OF_FEATURES 2
+#define NUM_OF_FEATURES 3
 #define NUM_OF_EXAMPLE 3
 #define NUM_OF_HID_NODES 3
 #define NUM_OF_OUT_NODES 1
@@ -23,8 +23,8 @@ double y[NUM_OF_EXAMPLE] = {200,90,190};
 double _y[NUM_OF_EXAMPLE];
 
 
-double syn0[NUM_OF_HID_NODES] [NUM_OF_FEATURES];
-double syn1[NUM_OF_OUT_NODES] [NUM_OF_HID_NODES];
+double syn0[NUM_OF_HID_NODES][NUM_OF_FEATURES];
+double syn1[NUM_OF_OUT_NODES][NUM_OF_HID_NODES];
 
 int main()
 {
@@ -49,7 +49,7 @@ int main()
     {
         for(int j = 0; j < NUM_OF_FEATURES; j++)
         {
-            printf(" %f ",syn0[i][j]);
+            printf(" %f ",syn1[i][j]);
         }
         printf("\n\r");
         printf("\n\r");

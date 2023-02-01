@@ -36,6 +36,6 @@ void normalize_data(double * input_vector, double * output_vector, int LEN);
 
 void weight_random_initialization(int HIDDEN_LEN,
                                   int INPUT_LEN,
-                                  double weights_matrix[HIDDEN_LEN] [INPUT_LEN]);
+                                  double weights_matrix[HID_LEN][IN_LEN]);
 
 #endif

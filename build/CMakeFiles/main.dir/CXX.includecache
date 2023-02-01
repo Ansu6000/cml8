@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/cml8/include/rn.h
+stdio.h
+-
+
+/root/cml8/src/main.cpp
+stdlib.h
+-
+iostream
+-
+stdio.h
+-
+../include/rn.h
+/root/cml8/include/rn.h
+./rn.cpp
+/root/cml8/src/rn.cpp
+
+/root/cml8/src/rn.cpp
+../include/rn.h
+/root/cml8/include/rn.h
+cmath
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+
